@@ -67,10 +67,14 @@ Flow Navigation (Screen to Screen)
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+![Screenshot 2024-03-17 at 10.10.27 PM](https://hackmd.io/_uploads/S17kmXHCa.png)
+![Screenshot 2024-03-17 at 10.10.38 PM](https://hackmd.io/_uploads/SkX17QSAT.png)
+![Screenshot 2024-03-17 at 10.10.45 PM](https://hackmd.io/_uploads/ByXyX7B06.png)
+![Screenshot 2024-03-17 at 10.10.53 PM](https://hackmd.io/_uploads/SkQymQrRa.png)
+![Screenshot 2024-03-17 at 10.11.01 PM](https://hackmd.io/_uploads/SJEymXBAa.png)
+![Screenshot 2024-03-17 at 10.11.14 PM](https://hackmd.io/_uploads/rJXyX7SRa.png)
 
-[BONUS] Digital Wireframes & Mockups
-[BONUS] Interactive Prototype
+
 ## Schema
 Models
 [Model Name, e.g., User]
