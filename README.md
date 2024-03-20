@@ -55,7 +55,13 @@ Users can logout
 
 
 ### 3. Navigation
-Flow Navigation (Screen to Screen)
+**Tab Navigation** (Tab to Screen)
+- [ ] [First Tab, e.g., Home Feed]
+- [ ] [Second Tab, e.g., Profile]
+...
+...
+...
+**Flow Navigation** (Screen to Screen)
 * Login Screen
 => Home Screen
 * Register Screen
@@ -94,3 +100,5 @@ Networking
 [Add list of network requests by screen ]
 [Create basic snippets for each Parse network request]
 [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
