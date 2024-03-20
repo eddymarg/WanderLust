@@ -73,6 +73,8 @@ Flow Navigation (Screen to Screen)
 ![Screenshot 2024-03-17 at 10.10.53 PM](https://hackmd.io/_uploads/SkQymQrRa.png)
 ![Screenshot 2024-03-17 at 10.11.01 PM](https://hackmd.io/_uploads/SJEymXBAa.png)
 ![Screenshot 2024-03-17 at 10.11.14 PM](https://hackmd.io/_uploads/rJXyX7SRa.png)
+![Screenshot 2024-03-20 at 6 42 00 PM](https://github.com/eddymarg/WanderLust/assets/114369011/4a9d2695-0875-4ea8-bd30-426b9214950a)
+
 
 
 ## Schema
