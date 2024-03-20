@@ -90,17 +90,18 @@ Users can logout
 ### Models
 [Model Name, e.g., User]
 
-Property	Type	Description
-username	String	unique id for the user post (default field)
-password	String	user's password for login authentication
-...	...	...
+[Model Name, e.g., User]
+| Property | Type   | Description                                  |
+|----------|--------|----------------------------------------------|
+| username | String | unique id for the user post (default field)   |
+| password | String | user's password for login authentication      |
+| ...      | ...    | ...                          
 
 ### Networking
-[List of network requests by screen]
-[Example: [GET] /users - to retrieve user data]
-...
-[Add list of network requests by screen ]
-[Create basic snippets for each Parse network request]
-[OPTIONAL: List endpoints if using existing API such as Yelp]
+- [List of network requests by screen]
+- [Example: [GET] /users - to retrieve user data]
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 
