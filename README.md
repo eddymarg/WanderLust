@@ -56,11 +56,12 @@ Users can logout
 
 ### 3. Navigation
 **Tab Navigation** (Tab to Screen)
-- [ ] [First Tab, e.g., Home Feed]
-- [ ] [Second Tab, e.g., Profile]
+- [First Tab, e.g., Home Feed]
+- [Second Tab, e.g., Profile]
 ...
 ...
 ...
+
 **Flow Navigation** (Screen to Screen)
 * Login Screen
 => Home Screen
