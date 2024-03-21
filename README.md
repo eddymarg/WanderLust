@@ -32,10 +32,10 @@ Required:
 - Users can select and read about different activities
 - Users can logout
 
-    Optional:
-    Users can edit their account details
-    Users can upload suggestions
-    Users can join a community of suggestions
+Optional:
+- Users can edit their account details
+- Users can upload suggestions
+- Users can join a community of suggestions
 
 ### 2. Screen Archetypes
 * Login Screen
