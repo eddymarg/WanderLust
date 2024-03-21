@@ -25,12 +25,12 @@ Scope: broad scope
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 Required:
-- Users can login 
-- Users can create an account
-- Users can view the home screen with suggested countries
-- Users can select which country to go to
-- Users can select and read about different activities
-- Users can logout
+[] Users can login 
+[] Users can create an account
+[] Users can view the home screen with suggested countries
+[] Users can select which country to go to
+[] Users can select and read about different activities
+[] Users can logout
 
 Optional:
 - Users can edit their account details
