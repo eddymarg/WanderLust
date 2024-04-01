@@ -33,9 +33,9 @@ Required:
 - [X] Users can logout
 
 Optional:
-- Users can edit their account details
-- Users can upload suggestions
-- Users can join a community of suggestions
+- [ ] Users can edit their account details
+- [ ] Users can upload suggestions
+- [ ] Users can join a community of suggestions
 
 ### 2. Screen Archetypes
 * Login Screen
