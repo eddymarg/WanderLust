@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //   - App Settings tab -> Security & Keys -> App Keys -> applicationId + clientKey
         //   - App Settings tab -> App Management -> Parse API Address
         // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
-        ParseSwift.initialize(applicationId: "HInjkcPQTU2EpuCa5zXFWNBddSKiDScZtTVDd5Sr",
-                              clientKey: "3MAPyuROxPh5RBj8e4KCHVlZuOxLLVtVOY3Qrp67",
+        ParseSwift.initialize(applicationId: "x1yHb3UgSfEKAjxyjncbg5k7PN8nomHQl8PzLrzu",
+                              clientKey: "wC6iLCFbInP8bQmy6XZ0pvtvCtfrGQwzFxIusedv",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
 
         // TODO: Pt 1: - Instantiate and save a test parse object to your server
