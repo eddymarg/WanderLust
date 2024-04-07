@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
+
 		56BB85162BC24A7B00216755 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB85152BC24A7B00216755 /* Activities.swift */; };
 		56BB85182BC24A8400216755 /* Activity in Resources */ = {isa = PBXBuildFile; fileRef = 56BB85172BC24A8400216755 /* Activity */; };
-=======
+
 		AD6008FE2BC112CD006C9ABC /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */; };
->>>>>>> Stashed changes
+
 		CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E51E2913A16C008F45BB /* PostCell.swift */; };
 		CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */; };
 		CB69974E2910F705007EDA6B /* Filmotype-Jade.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */; };
@@ -33,12 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< Updated upstream
+
 		56BB85152BC24A7B00216755 /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		56BB85172BC24A8400216755 /* Activity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Activity; sourceTree = "<group>"; };
-=======
+
 		AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lalezar-Regular.ttf"; path = "../../../../../Downloads/Lalezar-Regular.ttf"; sourceTree = "<group>"; };
->>>>>>> Stashed changes
+
 		CB13E51E2913A16C008F45BB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Filmotype-Jade.otf"; sourceTree = "<group>"; };
