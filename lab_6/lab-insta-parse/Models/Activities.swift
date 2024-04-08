@@ -8,13 +8,13 @@
 import Foundation
 
 // Activity model struct
-struct Activities {
+struct Activity {
     let name: String
     let description: String
 }
 
 // Extension with mock activities
-extension Activities  {
+extension Activity  {
     static var mockActivites: [Activity] = [
         Activity(name: "Paris, France",
                  description: "Explore here"),
