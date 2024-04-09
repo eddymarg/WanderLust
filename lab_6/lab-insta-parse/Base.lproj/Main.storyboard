@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,8 +21,131 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-dy-o7P">
                                 <rect key="frame" x="129" y="622.33333333333337" width="130" height="28"/>
+=======
+                            <stackView opaque="NO" contentMode="center" verticalHuggingPriority="207" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-Iz-IeO">
+                                <rect key="frame" x="105" y="621" width="201" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not an existing user?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-Tx-FSv">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
+                                        <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="15"/>
+                                        <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IET-Ub-6IG">
+                                        <rect key="frame" x="147" y="0.0" width="54" height="30"/>
+                                        <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sign Up">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Hbv-xC-mao" kind="show" id="NUb-Wc-NMS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.75" height="0.20000000000000001"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="top" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1a6-EZ-rsc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="318"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="switzerland-gradient" translatesAutoresizingMaskIntoConstraints="NO" id="P0H-ju-Idc">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="318"/>
+                                        <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="318" id="CLP-NV-toF"/>
+                                        </constraints>
+                                        <variation key="displayGamut=sRGB-heightClass=compact">
+                                            <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="JAI-jT-QQS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N0x-5F-5ER">
+                                <rect key="frame" x="53" y="368" width="225" height="197"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-k5-ehE">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="197"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-75-kQF">
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="58.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="50"/>
+                                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXF-wX-FiC">
+                                                <rect key="frame" x="0.0" y="87.666666666666686" width="225" height="16"/>
+                                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="20"/>
+                                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9l-O2-NHA" userLabel="Username Field">
+                                                <rect key="frame" x="0.0" y="103.66666666666669" width="225" height="30"/>
+                                                <color key="backgroundColor" systemColor="lightTextColor"/>
+                                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyJ-DO-2fH">
+                                                <rect key="frame" x="0.0" y="149" width="225" height="18"/>
+                                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="20"/>
+                                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOO-i2-QrJ" userLabel="Password Field">
+                                                <rect key="frame" x="0.0" y="167" width="225" height="30"/>
+                                                <color key="backgroundColor" systemColor="lightTextColor"/>
+                                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SOO-i2-QrJ" firstAttribute="bottom" secondItem="VyJ-DO-2fH" secondAttribute="bottom" constant="30" id="1pJ-aT-KOa"/>
+                                            <constraint firstItem="SOO-i2-QrJ" firstAttribute="top" secondItem="VyJ-DO-2fH" secondAttribute="centerY" constant="9" id="KXO-qS-2SA"/>
+                                            <constraint firstItem="TMQ-75-kQF" firstAttribute="top" secondItem="SOO-i2-QrJ" secondAttribute="bottom" constant="-197" id="MIt-OA-rEs"/>
+                                            <constraint firstItem="H9l-O2-NHA" firstAttribute="top" secondItem="AXF-wX-FiC" secondAttribute="centerY" constant="8" id="byk-rV-eGJ"/>
+                                            <constraint firstItem="H9l-O2-NHA" firstAttribute="bottom" secondItem="VyJ-DO-2fH" secondAttribute="centerY" constant="-24.329999999999998" id="h8h-B7-HFM"/>
+                                            <constraint firstItem="H9l-O2-NHA" firstAttribute="bottom" secondItem="AXF-wX-FiC" secondAttribute="bottom" constant="30" id="ueG-Ma-aP8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="68f-2S-ntE">
+                                <rect key="frame" x="31" y="477.00000000000006" width="18.666666666666671" height="82.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jiX-GV-7eT">
+                                        <rect key="frame" x="0.0" y="0.0" width="18.666666666666668" height="82.666666666666671"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rBw-6N-gd1">
+                                                <rect key="frame" x="0.0" y="1.3333333333333321" width="18.666666666666668" height="17.666666666666668"/>
+                                                <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="221" image="lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-uW-dif">
+                                                <rect key="frame" x="0.0" y="63.3333333333334" width="18.666666666666668" height="18.333333333333314"/>
+                                                <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-dy-o7P">
+                                <rect key="frame" x="129" y="593" width="130" height="28"/>
+>>>>>>> Stashed changes
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -191,7 +313,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foU-o4-ATk">
+<<<<<<< Updated upstream
                                 <rect key="frame" x="126" y="688" width="130" height="28"/>
+=======
+                                <rect key="frame" x="131" y="623" width="131" height="24"/>
+>>>>>>> Stashed changes
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -274,23 +400,72 @@
             </objects>
             <point key="canvasLocation" x="255" y="-2"/>
         </scene>
-        <!--WanderLust-->
+        <!--Feed View Controller-->
         <scene sceneID="MCq-ly-0Co">
             <objects>
                 <viewController id="D49-nA-hPQ" customClass="FeedViewController" customModule="lab_insta_parse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKP-Iw-p1I">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< Updated upstream
                         <viewLayoutGuide key="safeArea" id="9ww-49-hW1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+=======
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, User!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEJ-Js-MWb">
+                                <rect key="frame" x="16" y="103" width="225" height="58.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="25"/>
+                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommendations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPM-9d-tS2">
+                                <rect key="frame" x="16" y="192" width="361" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="40"/>
+                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAw-oj-GbB">
+                                <rect key="frame" x="0.0" y="258" width="393" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9p-Vq-e1h">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="268"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zYB-eC-Jdq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ZVR-zM-NXD"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lookup:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwi-pw-KfW">
+                                <rect key="frame" x="16" y="547" width="101" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="25"/>
+                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ww-49-hW1"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+>>>>>>> Stashed changes
                     </view>
-                    <navigationItem key="navigationItem" title="WanderLust" id="LaS-Bo-eDE">
+                    <navigationItem key="navigationItem" id="LaS-Bo-eDE">
                         <barButtonItem key="backBarButtonItem" title=" " id="3DH-ur-kyc"/>
+<<<<<<< Updated upstream
+=======
+                        <barButtonItem key="leftBarButtonItem" image="power.circle" catalog="system" id="zMF-65-UDO">
+                            <color key="tintColor" red="0.0" green="0.35170059970000001" blue="0.12047487060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="onLogOutTapped:" destination="D49-nA-hPQ" id="6WQ-YZ-OZd"/>
+                            </connections>
+                        </barButtonItem>
+>>>>>>> Stashed changes
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0B-Ms-PlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990.76923076923072" y="711.61137440758296"/>
+            <point key="canvasLocation" x="990.07633587786256" y="711.26760563380287"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yly-CZ-AY4">
@@ -409,12 +584,19 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
+<<<<<<< Updated upstream
+=======
+        <image name="power.circle" catalog="system" width="128" height="123"/>
+>>>>>>> Stashed changes
         <image name="switzerland-gradient" width="1098" height="1048"/>
         <systemColor name="lightTextColor">
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+<<<<<<< Updated upstream
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+=======
+>>>>>>> Stashed changes
     </resources>
 </document>
