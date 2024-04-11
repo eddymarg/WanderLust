@@ -84,6 +84,8 @@ Optional:
 ![Screenshot 2024-03-20 at 6 43 10 PM](https://github.com/eddymarg/WanderLust/assets/114369011/66a200d8-7f09-4cef-b1d8-89976795dfe4)
 ![Screenshot 2024-03-20 at 6 43 18 PM](https://github.com/eddymarg/WanderLust/assets/114369011/56bcbc54-f490-477b-96ef-adf91bde0532)
 
+## Current Build
+![IMG_0119](https://github.com/eddymarg/WanderLust/assets/114369011/6e64db0a-fad2-47ea-b5c2-82c6785fe463)
 
 
 ## Schema
