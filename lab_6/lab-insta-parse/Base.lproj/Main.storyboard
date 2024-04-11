@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hot-nK-RXH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hot-nK-RXH">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,16 +23,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" verticalHuggingPriority="207" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-Iz-IeO">
-                                <rect key="frame" x="105.00000000000001" y="621" width="188.33333333333337" height="30"/>
+                                <rect key="frame" x="105" y="621" width="201" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not an existing user?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-Tx-FSv">
-                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
                                         <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="15"/>
                                         <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IET-Ub-6IG">
-                                        <rect key="frame" x="134.33333333333334" y="0.0" width="54" height="30"/>
+                                        <rect key="frame" x="147" y="0.0" width="54" height="30"/>
                                         <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
@@ -79,7 +79,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="197"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-75-kQF">
-                                                <rect key="frame" x="0.0" y="0.0" width="225" height="78.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="58.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="50"/>
                                                 <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -132,7 +132,7 @@
                                                 <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="221" image="lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-uW-dif">
-                                                <rect key="frame" x="0.0" y="63.3333333333334" width="18.666666666666668" height="18.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="63.333333333333393" width="18.666666666666668" height="18.333333333333321"/>
                                                 <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                             </imageView>
@@ -141,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-dy-o7P">
-                                <rect key="frame" x="129" y="588" width="130" height="33"/>
+                                <rect key="frame" x="129" y="593" width="130" height="28"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -228,7 +228,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="233" height="280"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3G-YD-H6U">
-                                                <rect key="frame" x="0.0" y="0.0" width="233" height="78.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="233" height="58.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="50"/>
                                                 <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -284,7 +284,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foU-o4-ATk">
-                                <rect key="frame" x="131" y="623" width="131" height="29"/>
+                                <rect key="frame" x="131" y="623" width="131" height="24"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -546,6 +546,58 @@
             </objects>
             <point key="canvasLocation" x="1748" y="712"/>
         </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="OgF-mQ-L29">
+            <objects>
+                <viewController id="l9m-46-lwx" customClass="ActivityViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gbo-wQ-8o1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qLc-Ku-XMI">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="179" id="WK6-HZ-ieM" customClass="ActivityCell" customModule="lab_insta_parse">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="179"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WK6-HZ-ieM" id="xc5-yi-MA3">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQL-bu-3sa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qLc-Ku-XMI" firstAttribute="leading" secondItem="pQL-bu-3sa" secondAttribute="leading" id="L0T-9I-67i"/>
+                            <constraint firstItem="pQL-bu-3sa" firstAttribute="trailing" secondItem="qLc-Ku-XMI" secondAttribute="trailing" id="bOJ-tx-7K3"/>
+                            <constraint firstItem="pQL-bu-3sa" firstAttribute="bottom" secondItem="qLc-Ku-XMI" secondAttribute="bottom" id="cnM-eB-M1O"/>
+                            <constraint firstItem="qLc-Ku-XMI" firstAttribute="top" secondItem="pQL-bu-3sa" secondAttribute="top" id="sL6-eT-Cf2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfG-JF-nzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484.7328244274809" y="711.97183098591552"/>
+        </scene>
+        <!--Activity Detail View Controller-->
+        <scene sceneID="aD7-6Z-KtT">
+            <objects>
+                <viewController id="uJf-s0-vXP" customClass="ActivityDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwB-wC-Uc1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="D5Q-cs-hVS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aj-7x-VkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3256" y="711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
@@ -562,6 +614,9 @@
         </systemColor>
         <systemColor name="lightTextColor">
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
