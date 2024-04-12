@@ -84,7 +84,7 @@ Optional:
 ![Screenshot 2024-03-20 at 6 43 10 PM](https://github.com/eddymarg/WanderLust/assets/114369011/66a200d8-7f09-4cef-b1d8-89976795dfe4)
 ![Screenshot 2024-03-20 at 6 43 18 PM](https://github.com/eddymarg/WanderLust/assets/114369011/56bcbc54-f490-477b-96ef-adf91bde0532)
 
-## Current Build
+## Builds
 https://github.com/eddymarg/WanderLust/assets/114369011/50f3a76c-cfd3-4e91-85cd-a396a1e7055c
 
 
