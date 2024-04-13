@@ -8,6 +8,10 @@
 import UIKit
 
 class ActivityCell: UITableViewCell {
+    
+    // add the outlets here
+    
+    //make sure to configure the activity here
 
     override func awakeFromNib() {
         super.awakeFromNib()

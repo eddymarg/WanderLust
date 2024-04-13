@@ -20,4 +20,5 @@ class ActivityDetailViewController: UIViewController    {
         nameLabel.text = activityName
         descriptionLabel.text = activityDescription
     }
+    
 }
