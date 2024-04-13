@@ -13,6 +13,7 @@ import ParseSwift
 class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var horizontallyScrollableStackView: UIStackView!
     private let refreshControl = UIRefreshControl()
 
     private var posts = [Post]() {
@@ -31,6 +32,14 @@ class FeedViewController: UIViewController {
 
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+        
+//        for _ in 0...5 {
+//            if let cardView = Bundle.main.loadNibNamed("CardView", owner: nil, options: nil)!.first as? CardView{
+//                dayView.titleLabel.text = "Friday"
+//                dayView.detailLabel.text = "A long detail text will be shown here"
+//                horizontallyScrollableStackView.addArrangedSubview(dayView)
+//            }
+//        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
