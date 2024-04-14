@@ -12,7 +12,10 @@ import ParseSwift
 
 class FeedViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var CityImage: UIImageView!
+    
+    @IBOutlet weak var DestinationLabel: UILabel!
+    
     private let refreshControl = UIRefreshControl()
 
     private var posts = [Post]() {
