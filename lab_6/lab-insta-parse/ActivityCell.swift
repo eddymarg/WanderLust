@@ -2,7 +2,7 @@
 //  ActivityCell.swift
 //  lab-insta-parse
 //
-//  Created by Jayleen Espinal on 4/10/24.
+//  Created by Jayleen Espinal on 4/14/24.
 //
 
 import UIKit
@@ -10,8 +10,9 @@ import UIKit
 class ActivityCell: UITableViewCell {
     
     // add the outlets here
+    @IBOutlet weak var activityImageView: UIImageView!
+    @IBOutlet weak var activityNameLabel: UILabel!
     
-    //make sure to configure the activity here
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		569491B32BC7802E00738C37 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569491B22BC7802E00738C37 /* ActivityCell.swift */; };
+		565B8DAD2BCCA90E00579606 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8DAC2BCCA90E00579606 /* ActivityViewController.swift */; };
+		565B8DAF2BCCA94E00579606 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8DAE2BCCA94E00579606 /* ActivityDetailViewController.swift */; };
+		565B8DB12BCCCBBE00579606 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8DB02BCCCBBE00579606 /* ActivityCell.swift */; };
 		56BB85162BC24A7B00216755 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB85152BC24A7B00216755 /* Activities.swift */; };
 		56BB85182BC24A8400216755 /* Activity in Resources */ = {isa = PBXBuildFile; fileRef = 56BB85172BC24A8400216755 /* Activity */; };
 		AD6008FE2BC112CD006C9ABC /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */; };
@@ -31,7 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		569491B22BC7802E00738C37 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		565B8DAC2BCCA90E00579606 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		565B8DAE2BCCA94E00579606 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		565B8DB02BCCCBBE00579606 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		56BB85152BC24A7B00216755 /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		56BB85172BC24A8400216755 /* Activity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Activity; sourceTree = "<group>"; };
 		AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lalezar-Regular.ttf"; path = "../../../../../Downloads/Lalezar-Regular.ttf"; sourceTree = "<group>"; };
@@ -87,7 +91,6 @@
 		CB13E51D2913A121008F45BB /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				569491B22BC7802E00738C37 /* ActivityCell.swift */,
 				CB6997522911354B007EDA6B /* FeedViewController.swift */,
 				CB13E51E2913A16C008F45BB /* PostCell.swift */,
 			);
@@ -143,7 +146,10 @@
 				CB73D39D290E3B4C00C12538 /* Assets.xcassets */,
 				CB73D39F290E3B4C00C12538 /* LaunchScreen.storyboard */,
 				CB73D3A2290E3B4C00C12538 /* Info.plist */,
+				565B8DAC2BCCA90E00579606 /* ActivityViewController.swift */,
 				CB6997472910E7E3007EDA6B /* Fonts */,
+				565B8DAE2BCCA94E00579606 /* ActivityDetailViewController.swift */,
+				565B8DB02BCCCBBE00579606 /* ActivityCell.swift */,
 			);
 			path = "lab-insta-parse";
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565B8DAF2BCCA94E00579606 /* ActivityDetailViewController.swift in Sources */,
 				CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */,
 				CBCDFAFE291144DA001F1CF1 /* PostViewController.swift in Sources */,
 				CBE72850293741370005CA57 /* ViewController+Extensions.swift in Sources */,
@@ -247,10 +254,11 @@
 				CB73D395290E3B4A00C12538 /* AppDelegate.swift in Sources */,
 				CB6997532911354B007EDA6B /* FeedViewController.swift in Sources */,
 				CB7896FD29371C3C00635932 /* User.swift in Sources */,
-				569491B32BC7802E00738C37 /* ActivityCell.swift in Sources */,
 				CB6997512911044D007EDA6B /* SignUpViewController.swift in Sources */,
+				565B8DB12BCCCBBE00579606 /* ActivityCell.swift in Sources */,
 				56BB85162BC24A7B00216755 /* Activities.swift in Sources */,
 				CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */,
+				565B8DAD2BCCA90E00579606 /* ActivityViewController.swift in Sources */,
 				CB73D397290E3B4A00C12538 /* SceneDelegate.swift in Sources */,
 				CB7896FF29371C4900635932 /* Post.swift in Sources */,
 			);
