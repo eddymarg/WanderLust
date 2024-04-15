@@ -5,41 +5,40 @@
 //  Created by Charlie Hieger on 11/1/22.
 //
 
-/*import UIKit
+import UIKit
 
 // TODO: P1 1 - Import Parse Swift
 import ParseSwift
 
 class FeedViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    private let refreshControl = UIRefreshControl()
+    //@IBOutlet weak var tableView: UITableView!
+    //private let refreshControl = UIRefreshControl()
 
-    private var posts = [Post]() {
+    /*private var posts = [Post]() {
         didSet {
             // Reload table view data any time the posts variable gets updated.
             tableView.reloadData()
         }
-    }
+    }*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.allowsSelection = false
-
-        tableView.refreshControl = refreshControl
-        refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+        //tableView.delegate = self
+        //tableView.dataSource = self
+        //tableView.allowsSelection = false
+        //tableView.refreshControl = refreshControl
+        //refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+   /* override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         queryPosts()
-    }
+    }*/
 
-    private func queryPosts(completion: (() -> Void)? = nil) {
+   /* private func queryPosts(completion: (() -> Void)? = nil) {
         // TODO: Pt 1 - Query Posts
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/2%20-%20Finding%20Objects.xcplaygroundpage/Contents.swift#L66
 
@@ -49,7 +48,7 @@ class FeedViewController: UIViewController {
         // 4. TODO: Pt 2 - Only include results created yesterday onwards
         // 5. TODO: Pt 2 - Limit max number of returned posts
 
-                           
+       
         let query = Post.query()
             .include("user")
             .order([.descending("createdAt")])
@@ -69,17 +68,19 @@ class FeedViewController: UIViewController {
             completion?()
         }
     }
+        */
 
     @IBAction func onLogOutTapped(_ sender: Any) {
         showConfirmLogoutAlert()
     }
 
+    /*
     @objc private func onPullToRefresh() {
         refreshControl.beginRefreshing()
         queryPosts { [weak self] in
             self?.refreshControl.endRefreshing()
         }
-    }
+    }*/
 
     private func showConfirmLogoutAlert() {
         let alertController = UIAlertController(title: "Log out of \(User.current?.username ?? "current account")?", message: nil, preferredStyle: .alert)
@@ -93,7 +94,7 @@ class FeedViewController: UIViewController {
     }
 }
 
-extension FeedViewController: UITableViewDataSource {
+/*extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         posts.count
     }
@@ -105,7 +106,7 @@ extension FeedViewController: UITableViewDataSource {
         cell.configure(with: posts[indexPath.row])
         return cell
     }
-}
+}*/
 
 extension FeedViewController: UITableViewDelegate { }
-*/
+
