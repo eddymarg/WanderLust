@@ -11,7 +11,6 @@
 		565B8DAF2BCCA94E00579606 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8DAE2BCCA94E00579606 /* ActivityDetailViewController.swift */; };
 		565B8DB12BCCCBBE00579606 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565B8DB02BCCCBBE00579606 /* ActivityCell.swift */; };
 		56BB85162BC24A7B00216755 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB85152BC24A7B00216755 /* Activities.swift */; };
-		56BB85182BC24A8400216755 /* Activity in Resources */ = {isa = PBXBuildFile; fileRef = 56BB85172BC24A8400216755 /* Activity */; };
 		AD6008FE2BC112CD006C9ABC /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */; };
 		CB13E51F2913A16C008F45BB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E51E2913A16C008F45BB /* PostCell.swift */; };
 		CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */; };
@@ -37,7 +36,6 @@
 		565B8DAE2BCCA94E00579606 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 		565B8DB02BCCCBBE00579606 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		56BB85152BC24A7B00216755 /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
-		56BB85172BC24A8400216755 /* Activity */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Activity; sourceTree = "<group>"; };
 		AD6008FD2BC112CD006C9ABC /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lalezar-Regular.ttf"; path = "../../../../../Downloads/Lalezar-Regular.ttf"; sourceTree = "<group>"; };
 		CB13E51E2913A16C008F45BB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				CB13E51D2913A121008F45BB /* Feed */,
 				CB13E51C2913A100008F45BB /* Post */,
 				CB13E5222913B119008F45BB /* Extensions */,
-				56BB85172BC24A8400216755 /* Activity */,
 				CB73D39A290E3B4A00C12538 /* Main.storyboard */,
 				CB73D39D290E3B4C00C12538 /* Assets.xcassets */,
 				CB73D39F290E3B4C00C12538 /* LaunchScreen.storyboard */,
@@ -233,7 +230,6 @@
 				CB73D3A1290E3B4C00C12538 /* LaunchScreen.storyboard in Resources */,
 				CB73D39E290E3B4C00C12538 /* Assets.xcassets in Resources */,
 				CB69974E2910F705007EDA6B /* Filmotype-Jade.otf in Resources */,
-				56BB85182BC24A8400216755 /* Activity in Resources */,
 				CB73D39C290E3B4A00C12538 /* Main.storyboard in Resources */,
 				AD6008FE2BC112CD006C9ABC /* Lalezar-Regular.ttf in Resources */,
 			);

@@ -16,6 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+            var window: UIWindow?
+
+            func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+                // Create a UIWindow
+                window = UIWindow(frame: UIScreen.main.bounds)
+
+                // Initialize your initial view controller
+                let LoginViewController = LoginViewController()
+
+                // Set the root view controller
+                window?.rootViewController = LoginViewController
+
+                // Make the window visible
+                window?.makeKeyAndVisible()
+
+                return true
+            }
+
         // TODO: Pt 1 - Initialize Parse SDK
 
         // Add the following values from your Parse server.
