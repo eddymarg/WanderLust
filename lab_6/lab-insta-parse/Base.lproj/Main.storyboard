@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,21 +18,21 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="lab_insta_parse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" verticalHuggingPriority="207" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-Iz-IeO">
-                                <rect key="frame" x="105.00000000000001" y="628" width="182.33333333333337" height="35.666666666666629"/>
+                                <rect key="frame" x="105.00000000000001" y="628" width="188.33333333333337" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Not an existing user?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-Tx-FSv">
-                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="35.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="30"/>
                                         <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="15"/>
                                         <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IET-Ub-6IG">
-                                        <rect key="frame" x="134.33333333333334" y="0.0" width="48" height="35.666666666666664"/>
+                                        <rect key="frame" x="134.33333333333334" y="0.0" width="54" height="30"/>
                                         <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
@@ -39,7 +40,7 @@
                                                 <fragment content="Sign Up">
                                                     <attributes>
                                                         <color key="NSColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <font key="NSFont" size="15" name="Lalezar-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="15"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>
@@ -132,7 +133,7 @@
                                                 <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="221" image="lock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-uW-dif">
-                                                <rect key="frame" x="0.0" y="63.333333333333393" width="18.666666666666668" height="18.333333333333321"/>
+                                                <rect key="frame" x="0.0" y="63.3333333333334" width="18.666666666666668" height="18.333333333333314"/>
                                                 <color key="tintColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                             </imageView>
@@ -396,30 +397,42 @@
                                 <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lookup:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-9k-ICC">
-                                <rect key="frame" x="39" y="583" width="130" height="40"/>
-                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="25"/>
-                                <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XV-HT-qIr">
-                                <rect key="frame" x="0.0" y="258" width="430" height="294"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-c9-W99">
-                                        <rect key="frame" x="10" y="0.0" width="410" height="294"/>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Nmg-c9-W99" firstAttribute="centerX" secondItem="3XV-HT-qIr" secondAttribute="centerX" id="85a-19-cAJ"/>
-                                    <constraint firstItem="Nmg-c9-W99" firstAttribute="top" secondItem="CBV-GK-RpQ" secondAttribute="top" id="EXv-kD-aXu"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nmg-c9-W99" secondAttribute="trailing" constant="10" id="ML1-nf-4N5"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nmg-c9-W99" secondAttribute="bottom" id="YzZ-R7-sJl"/>
-                                    <constraint firstAttribute="height" secondItem="Nmg-c9-W99" secondAttribute="height" id="nZd-np-A8C"/>
-                                    <constraint firstItem="Nmg-c9-W99" firstAttribute="leading" secondItem="3XV-HT-qIr" secondAttribute="leading" constant="10" id="tNh-Ow-TXb"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="qc5-C5-oyL"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="CBV-GK-RpQ"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y0c-QN-Muk">
+                                <rect key="frame" x="0.0" y="263" width="430" height="582"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="530" id="o7o-fy-dYB">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="530"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o7o-fy-dYB" id="3gM-2J-OjE">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="530"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-49-Koq">
+                                                    <rect key="frame" x="20" y="11" width="384" height="505"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-qt-D2W">
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="505"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-0I-hAH" userLabel="Post Image View" customClass="ReusableCustomVIew" customModule="lab_insta_parse" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="8" width="384" height="497"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <accessibility key="accessibilityConfiguration" label="postImageView"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OLy-BD-gzl" kind="show" id="bb8-3g-1QL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9ww-49-hW1"/>
                         <color key="backgroundColor" red="0.93725490570000003" green="0.85882353779999998" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -427,15 +440,9 @@
                             <constraint firstItem="9ww-49-hW1" firstAttribute="trailing" secondItem="Xjq-k9-gE8" secondAttribute="trailing" constant="181" id="05H-gj-2JA"/>
                             <constraint firstItem="Xjq-k9-gE8" firstAttribute="leading" secondItem="9ww-49-hW1" secondAttribute="leading" constant="39" id="1XA-XU-urJ"/>
                             <constraint firstItem="Xjq-k9-gE8" firstAttribute="top" secondItem="9ww-49-hW1" secondAttribute="top" constant="28" id="5Nn-1Z-ElF"/>
-                            <constraint firstItem="3XV-HT-qIr" firstAttribute="leading" secondItem="9ww-49-hW1" secondAttribute="leading" id="C9W-WO-oIC"/>
-                            <constraint firstItem="NMe-9k-ICC" firstAttribute="leading" secondItem="9ww-49-hW1" secondAttribute="leading" constant="39" id="EKq-eN-erk"/>
                             <constraint firstItem="9ww-49-hW1" firstAttribute="trailing" secondItem="tTk-gH-ZWt" secondAttribute="trailing" constant="39" id="aWt-Zc-5uu"/>
-                            <constraint firstItem="9ww-49-hW1" firstAttribute="trailing" secondItem="NMe-9k-ICC" secondAttribute="trailing" constant="261" id="chd-zx-k9t"/>
                             <constraint firstItem="tTk-gH-ZWt" firstAttribute="top" secondItem="Xjq-k9-gE8" secondAttribute="bottom" constant="22" id="euF-ti-us1"/>
                             <constraint firstItem="tTk-gH-ZWt" firstAttribute="leading" secondItem="9ww-49-hW1" secondAttribute="leading" constant="39" id="gXr-mI-mqi"/>
-                            <constraint firstItem="3XV-HT-qIr" firstAttribute="trailing" secondItem="9ww-49-hW1" secondAttribute="trailing" id="lRc-16-f64"/>
-                            <constraint firstItem="NMe-9k-ICC" firstAttribute="top" secondItem="3XV-HT-qIr" secondAttribute="bottom" constant="31" id="wxn-9r-f5P"/>
-                            <constraint firstItem="3XV-HT-qIr" firstAttribute="top" secondItem="tTk-gH-ZWt" secondAttribute="bottom" constant="2.6699999999999999" id="yr1-rM-0uK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LaS-Bo-eDE">
@@ -448,13 +455,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="OLy-BD-gzl" kind="show" id="cVL-qo-mr9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0B-Ms-PlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="990.07633587786256" y="711.26760563380287"/>
+            <point key="canvasLocation" x="989.30232558139539" y="710.72961373390558"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yly-CZ-AY4">
@@ -615,6 +619,9 @@
         <image name="switzerland-gradient" width="1098" height="1048"/>
         <systemColor name="lightTextColor">
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
