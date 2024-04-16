@@ -402,32 +402,41 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="530" id="o7o-fy-dYB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="530" id="o7o-fy-dYB" customClass="PostCell" customModule="lab_insta_parse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="430" height="530"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o7o-fy-dYB" id="3gM-2J-OjE">
                                             <rect key="frame" x="0.0" y="0.0" width="430" height="530"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-49-Koq">
-                                                    <rect key="frame" x="20" y="11" width="384" height="505"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-m1-nuh">
+                                                    <rect key="frame" x="160" y="165" width="384" height="505"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-qt-D2W">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-qt-D2W">
                                                             <rect key="frame" x="0.0" y="0.0" width="384" height="505"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-0I-hAH" userLabel="Post Image View" customClass="ReusableCustomVIew" customModule="lab_insta_parse" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="8" width="384" height="497"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <accessibility key="accessibilityConfiguration" label="postImageView"/>
-                                                                </imageView>
-                                                            </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="384" id="6Sv-Ze-gax"/>
+                                                                <constraint firstAttribute="height" constant="505" id="YOw-B3-OBi"/>
+                                                            </constraints>
                                                         </view>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yBE-0I-hAH" userLabel="Post Image View">
+                                                    <rect key="frame" x="20" y="17" width="384" height="497"/>
+                                                    <accessibility key="accessibilityConfiguration" label="postImageView"/>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yBE-0I-hAH" secondAttribute="trailing" constant="26" id="DKU-8p-I91"/>
+                                                <constraint firstItem="yBE-0I-hAH" firstAttribute="leading" secondItem="3gM-2J-OjE" secondAttribute="leading" constant="20" id="KTk-ad-2Ad"/>
+                                                <constraint firstAttribute="bottom" secondItem="yBE-0I-hAH" secondAttribute="bottom" constant="16" id="PfQ-DQ-RPt"/>
+                                                <constraint firstItem="yBE-0I-hAH" firstAttribute="top" secondItem="3gM-2J-OjE" secondAttribute="top" constant="17" id="o0t-Tb-R1u"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="PostCell"/>
                                         <connections>
+                                            <outlet property="postImaheView" destination="yBE-0I-hAH" id="MgC-Se-KK3"/>
                                             <segue destination="OLy-BD-gzl" kind="show" id="bb8-3g-1QL"/>
                                         </connections>
                                     </tableViewCell>
@@ -546,7 +555,7 @@
                         <outlet property="activityButton3" destination="YBp-7S-Fjc" id="SY3-FX-PSM"/>
                         <outlet property="countryDescriptionLabel" destination="GBb-zf-8eK" id="ikn-SY-DOv"/>
                         <outlet property="countryNameLabel" destination="OfI-Aa-jMu" id="wAM-0b-YiM"/>
-                        <segue destination="uJf-s0-vXP" kind="show" id="YaF-Ma-Dlc"/>
+                        <segue destination="uJf-s0-vXP" kind="show" identifier="activity view" id="YaF-Ma-Dlc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6a3-3y-aGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
