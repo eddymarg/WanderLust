@@ -568,11 +568,8 @@
                                 <color key="textColor" red="0.30000758170000003" green="0.4241344333" blue="0.2461489439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlf-wL-BjC">
-                                <rect key="frame" x="16" y="103" width="398" height="264"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bs-Tg-gOC" userLabel="activityNameLabel">
-                                <rect key="frame" x="16" y="406" width="398" height="46.666666666666657"/>
+                                <rect key="frame" x="166" y="406" width="98" height="46.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="40"/>
                                 <color key="textColor" red="0.32549020649999999" green="0.4196078479" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -583,19 +580,13 @@
                         <constraints>
                             <constraint firstItem="D5Q-cs-hVS" firstAttribute="bottom" secondItem="Y5K-I7-2rK" secondAttribute="bottom" constant="102" id="2yp-7M-ytV"/>
                             <constraint firstItem="Y5K-I7-2rK" firstAttribute="trailing" secondItem="WwB-wC-Uc1" secondAttribute="trailingMargin" id="5NB-xJ-c8q"/>
-                            <constraint firstItem="3Bs-Tg-gOC" firstAttribute="top" secondItem="qlf-wL-BjC" secondAttribute="bottom" constant="39" id="8c6-d6-qD2"/>
-                            <constraint firstItem="qlf-wL-BjC" firstAttribute="leading" secondItem="D5Q-cs-hVS" secondAttribute="leading" constant="16" id="CSH-Z1-gsG"/>
                             <constraint firstItem="Y5K-I7-2rK" firstAttribute="top" secondItem="3Bs-Tg-gOC" secondAttribute="bottom" constant="31.333333333333371" id="Cul-Yy-Ch5"/>
-                            <constraint firstItem="qlf-wL-BjC" firstAttribute="leading" secondItem="3Bs-Tg-gOC" secondAttribute="leading" id="MR8-M1-Cyo"/>
-                            <constraint firstItem="qlf-wL-BjC" firstAttribute="top" secondItem="D5Q-cs-hVS" secondAttribute="top" id="Oud-ZR-qEO"/>
-                            <constraint firstItem="Y5K-I7-2rK" firstAttribute="centerX" secondItem="qlf-wL-BjC" secondAttribute="centerX" id="fjL-rI-Wx6"/>
                             <constraint firstItem="Y5K-I7-2rK" firstAttribute="centerX" secondItem="3Bs-Tg-gOC" secondAttribute="centerX" id="hK7-EM-0i5"/>
                             <constraint firstItem="Y5K-I7-2rK" firstAttribute="leading" secondItem="WwB-wC-Uc1" secondAttribute="leadingMargin" id="mRg-bu-dGi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityDescriptionLabel" destination="Y5K-I7-2rK" id="ghS-F7-Wno"/>
-                        <outlet property="activityImageView" destination="qlf-wL-BjC" id="LCn-JP-Xv5"/>
                         <outlet property="activityNameLabel" destination="3Bs-Tg-gOC" id="kRY-sn-3Pj"/>
                     </connections>
                 </viewController>
