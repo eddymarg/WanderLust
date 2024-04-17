@@ -10,6 +10,16 @@
 
 ## Overview
 
+## Demo
+
+<div>
+    <a href="https://www.loom.com/share/2cbaf92c60204173a0b881a7cccbd8f2">
+    </a>
+    <a href="https://www.loom.com/share/2cbaf92c60204173a0b881a7cccbd8f2">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2cbaf92c60204173a0b881a7cccbd8f2-with-play.gif">
+    </a>
+  </div>
+
 ## Description
 This is a mobile app that allows users to choose a country they want and get suggestions on places to visit and things to do.
 
@@ -27,9 +37,9 @@ Scope: broad scope
 Required:
 - [X] Users can login 
 - [X] Users can create an account
-- [ ] Users can view the home screen with suggested countries
-- [ ] Users can select which country to go to
-- [ ] Users can select and read about different activities
+- [X] Users can view the home screen with suggested countries
+- [X] Users can select which country to go to
+- [X] Users can select and read about different activities
 - [X] Users can logout
 
 Optional:
