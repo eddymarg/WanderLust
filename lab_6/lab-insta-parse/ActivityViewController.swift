@@ -10,13 +10,12 @@ import UIKit
 class ActivityViewController: UIViewController {
 
     
+
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var countryDescriptionLabel: UILabel!
 
-    @IBOutlet weak var activityButton1: UIButton!
-    @IBOutlet weak var activityButton2: UIButton!
-    @IBOutlet weak var activityButton3: UIButton!
-
+    @IBOutlet weak var activityDropDown: UIPickerView!
+    
     // Properties to hold data
     var selectedCountry: String?
     var countryDescription: String?
@@ -29,37 +28,11 @@ class ActivityViewController: UIViewController {
             countryNameLabel.text = selectedCountry
             countryDescriptionLabel.text = countryDescription
 
-            // Populate activity buttons
-            if let activities = activities {
-                for (index, activity) in activities.enumerated() {
-                    switch index {
-                    case 0:
-                        activityButton1.setTitle(activity.activityName, for: .normal)
-                    case 1:
-                        activityButton2.setTitle(activity.activityName, for: .normal)
-                    case 2:
-                        activityButton3.setTitle(activity.activityName, for: .normal)
-                    default:
-                        break
-                    }
-                }
-            }
+            // Set up dropdown menu
+            activityDropDown.dataSource = self
+            activityDropDown.delegate = self
         }
 
-        // Action method for activity button 1
-        @IBAction func activityButton1Tapped(_ sender: UIButton) {
-            navigateToActivityDetail(for: 0)
-        }
-
-        // Action method for activity button 2
-        @IBAction func activityButton2Tapped(_ sender: UIButton) {
-            navigateToActivityDetail(for: 1)
-        }
-
-        // Action method for activity button 3
-        @IBAction func activityButton3Tapped(_ sender: UIButton) {
-            navigateToActivityDetail(for: 2)
-        }
 
         private func navigateToActivityDetail(for index: Int) {
             guard let activities = activities, index < activities.count else {
@@ -74,6 +47,7 @@ class ActivityViewController: UIViewController {
                 navigationController?.pushViewController(activityDetailVC, animated: true)
             }
         }
+    
     
     private func showConfirmLogoutAlert() {
         let alertController = UIAlertController(title: "Log out of \(User.current?.username ?? "current account")?", message: nil, preferredStyle: .alert)
@@ -91,6 +65,33 @@ class ActivityViewController: UIViewController {
     }
 }
 
+extension ActivityViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
 
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return activities?.count ?? 0
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return activities?[row].activityName
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        guard let selectedActivity = activities?[row] else { return }
+        navigateToActivityDetail(selectedActivity)
+    }
+
+    private func navigateToActivityDetail(_ activity: Activity) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let activityDetailVC = storyboard.instantiateViewController(withIdentifier: "ActivityDetailViewController") as? ActivityDetailViewController {
+            activityDetailVC.activityName = activity.activityName
+            activityDetailVC.activityDescription = activity.activityDescription
+            // Pass any other necessary data
+            navigationController?.pushViewController(activityDetailVC, animated: true)
+        }
+    }
+}
 
 

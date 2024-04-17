@@ -25,7 +25,7 @@ class ActivityDetailViewController: UIViewController {
         // Set up UI with data
         activityNameLabel.text = activityName
         activityDescriptionLabel.text = activityDescription
-        if let imageName = imageName    {
+        if let imageName = imageName {
             activityImageView.image = UIImage(named: imageName)
         }
     }

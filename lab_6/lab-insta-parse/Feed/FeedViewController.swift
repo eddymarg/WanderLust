@@ -7,81 +7,93 @@
 
 import UIKit
 
-// TODO: P1 1 - Import Parse Swift
-import ParseSwift
+
 
 class FeedViewController: UIViewController {
-
-    //@IBOutlet weak var tableView: UITableView!
-    //private let refreshControl = UIRefreshControl()
-
-    /*private var posts = [Post]() {
-        didSet {
-            // Reload table view data any time the posts variable gets updated.
-            tableView.reloadData()
-        }
-    }*/
-
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var countryPicker: UIPickerView!
+    
+    let images = ["france", "indo", "japan", "hungary", "brazil"]
+    let countries = ["Bali, Indonesia", "Paris, France", "Tokyo, Japan", "Budapest, Hungary"]
+    
+    struct Constants    {
+        static let imageCellIdentifier = "ImageCell"
+    }
+    
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //tableView.delegate = self
-        //tableView.dataSource = self
-        //tableView.allowsSelection = false
-        //tableView.refreshControl = refreshControl
-        //refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
-    }
-
-   /* override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        queryPosts()
-    }*/
-
-   /* private func queryPosts(completion: (() -> Void)? = nil) {
-        // TODO: Pt 1 - Query Posts
-        // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/2%20-%20Finding%20Objects.xcplaygroundpage/Contents.swift#L66
-
-        // 1. Create a query to fetch Posts
-        // 2. Any properties that are Parse objects are stored by reference in Parse DB and as such need to explicitly use `include_:)` to be included in query results.
-        // 3. Sort the posts by descending order based on the created at date
-        // 4. TODO: Pt 2 - Only include results created yesterday onwards
-        // 5. TODO: Pt 2 - Limit max number of returned posts
-
-       
-        let query = Post.query()
-            .include("user")
-            .order([.descending("createdAt")])
-
-        // Find and return posts that meet query criteria (async)
-        query.find { [weak self] result in
-            switch result {
-            case .success(let posts):
-                // Update the local posts property with fetched posts
-                self?.posts = posts
-            case .failure(let error):
-                self?.showAlert(description: error.localizedDescription)
-            }
-
-            // Call the completion handler (regardless of error or success, this will signal the query finished)
-            // This is used to tell the pull-to-refresh control to stop refresshing
-            completion?()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        countryPicker.dataSource = self
+        countryPicker.delegate = self
+        
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout  {
+            layout.scrollDirection = .horizontal
         }
-    }
-        */
+        
+        collectionView.register(MyImageCell.self, forCellWithReuseIdentifier: Constants.imageCellIdentifier)
+        
+        startTimer()
 
+    }
+    
+    func navigateToActivitiesScene(with country: String) {
+        performSegue(withIdentifier: "ActivitiesSegue", sender: country)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Check if the segue identifier matches
+            if segue.identifier == "ActivitiesSegue" {
+                // Ensure the destination view controller is of type ActivityViewController
+                if let destinationVC = segue.destination as? ActivityViewController {
+                    // Check if sender is a string (selected country)
+                    if let selectedCountry = sender as? String {
+                        // Pass the selected country to ActivityViewController
+                        destinationVC.selectedCountry = selectedCountry
+                        
+                        // Here, you can fetch the corresponding country description and activities
+                        // and pass them to ActivityViewController as well
+                        if let (activities, countryDescription) = Activity.activities(forCountry: selectedCountry) {
+                            destinationVC.activities = activities
+                            destinationVC.countryDescription = countryDescription
+                        }
+                    }
+                }
+            }
+        }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(FeedViewController.scrollToNextItem), userInfo: nil, repeats: true)
+    }
+
+    
+    @objc func scrollToNextItem() {
+        // Calculate the index path of the next item
+        let currentIndexPath = collectionView.indexPathsForVisibleItems.first ?? IndexPath(item: 0, section: 0)
+        var nextIndexPath = IndexPath(item: currentIndexPath.item + 1, section: currentIndexPath.section)
+        
+        // Check if it exceeds the number of items, and reset to the first item if needed
+        if nextIndexPath.item >= images.count {
+            nextIndexPath = IndexPath(item: 0, section: currentIndexPath.section)
+        }
+        
+        // Scroll to the next item
+        collectionView.scrollToItem(at: nextIndexPath, at: .centeredHorizontally, animated: true)
+    }
+
+    deinit {
+        timer?.invalidate()
+    }
+    
     @IBAction func onLogOutTapped(_ sender: Any) {
         showConfirmLogoutAlert()
     }
-
-    /*
-    @objc private func onPullToRefresh() {
-        refreshControl.beginRefreshing()
-        queryPosts { [weak self] in
-            self?.refreshControl.endRefreshing()
-        }
-    }*/
-
+    
     private func showConfirmLogoutAlert() {
         let alertController = UIAlertController(title: "Log out of \(User.current?.username ?? "current account")?", message: nil, preferredStyle: .alert)
         let logOutAction = UIAlertAction(title: "Log out", style: .destructive) { _ in
@@ -94,19 +106,72 @@ class FeedViewController: UIViewController {
     }
 }
 
-/*extension FeedViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        posts.count
+extension FeedViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return countries.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return countries[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedCountry = countries[row]
+        navigateToActivitiesScene(with: selectedCountry)
+    }
+}
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell else {
-            return UITableViewCell()
+extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! MyImageCell
+        // Set the image directly on the cell's contentView's subview (imageView)
+        cell.contentView.subviews.forEach { subview in
+            if let imageView = subview as? UIImageView {
+                imageView.image = UIImage(named: images[indexPath.item])
+            }
         }
-        cell.configure(with: posts[indexPath.row])
         return cell
     }
-}*/
+}
 
-extension FeedViewController: UITableViewDelegate { }
+class MyImageCell: UICollectionViewCell {
+    // Remove the imageView property
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        // Initialize and configure image view
+        let imageView = UIImageView(frame: contentView.bounds)
+        imageView.contentMode = .scaleAspectFill // Adjust content mode here
+        imageView.clipsToBounds = true
+        contentView.addSubview(imageView)
+        
+        // Add any additional UI elements or customizations
+        
+        // Add constraints if needed
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+    
+    
+extension FeedViewController: UITableViewDelegate {}
 
