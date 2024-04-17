@@ -36,13 +36,13 @@ extension Activity {
                 Activity(activityName: "Take a ride in the Bus Toque", activityDescription: "Discover a different way to dine. Bus toque is an atypical bus restaurant that offers a gourmet and cultural visit in the heart of Paris by day and night.", countryDescription: "Paris, France", imageName: "bus-toque"),
                 ]
             ),
-        "Rio De Janeiro, Brazil": (
-            countryDescription: "With its pretty beaches, dramatic mountains, and soundtrack of samba and bossa nova humming in the background, Rio de Janeiro casts a spell. Famed Ipanema Beach is still the place to stroll, sunbathe, and be seen.",
+        "Venice, Italy": (
+            countryDescription: "Centuries-old architecture, cobblestone alleys, a maze of eye-catching islands, and of course, the famous canals that run through it all—Venice is quite literally unlike anywhere else. While the capital of the Veneto (one of the 20 regions in Italy) is undoubtedly a stunner, it’s also a very real city.",
             activities: [
             // Activities for Rio De Janeiro
-                Activity(activityName: "Visit Corcovado - Christ the Redeemer", activityDescription: "At the top of the wonder city is the Cristo Redentor Sanctuary, the main postcard of Brazil. The monument to Christ the Redeemer is the largest and most famous art seco sculpture in the world.", countryDescription: "Rio De Janeiro, Brazil", imageName: "cristo"),
-                Activity(activityName: "Hike up Sugarloaf Mountain", activityDescription: "One of Brazil's most iconic landmarks and a symbol of Rio De Janeiro's beauriful natural surroundings, Sugarloaf Mountain is a must see attraction.", countryDescription: "Rio De Janeiro, Brazil", imageName: "sugarloaf"),
-                Activity(activityName: "Explore the beautiful Botanical Garden", activityDescription: "two 800 yard long rows of towering royal palm trees are a highlight of this massive garden containing thousands of plants and trees, including every variety of palm tree imaginable.", countryDescription: "Rio De Janeiro, Brazil", imageName: "garden"),
+                Activity(activityName: "Visit Basilica di San Marco", activityDescription: "Blending the architectural styles of East and West, Venice's magnificent basilica was consecrated in 832 AD as an ecclesiastical building to house the remains of St. Mark.", countryDescription: "Venice, Italy", imageName: "cristo"),
+                Activity(activityName: "Paddle through the Canal Grande", activityDescription: "Venice's main water thoroughfare, lined with great Renaissance palaces, is a colorful and busy spectacle of gondolas and vaporetti.", countryDescription: "Venice, Italy", imageName: "sugarloaf"),
+                Activity(activityName: "Explore the Scuola Grande di San Rocco", activityDescription: "The Scuola Grande di San Rocco is a lay confraternity founded in 1478. The popularity of the cult of St. Roch, whose remains had been in the possession of the brotherhood since 1485, contributed to the latter’s rapid expansion to the extent of it becoming the richest Scuola of the city.", countryDescription: "Venice, Italy", imageName: "garden"),
                 ]
             ),
         "Tokyo, Japan": (

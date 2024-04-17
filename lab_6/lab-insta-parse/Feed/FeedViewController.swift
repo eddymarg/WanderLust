@@ -14,8 +14,8 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var countryPicker: UIPickerView!
     
-    let images = ["france", "indo", "japan", "hungary", "brazil"]
-    let countries = ["Bali, Indonesia", "Paris, France", "Tokyo, Japan", "Budapest, Hungary"]
+    let images = ["france", "indo", "japan", "hungary", "brazil", "italy"]
+    let countries = ["Bali, Indonesia", "Paris, France", "Venice, Italy","Tokyo, Japan", "Budapest, Hungary"]
     
     struct Constants    {
         static let imageCellIdentifier = "ImageCell"
